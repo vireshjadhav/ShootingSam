@@ -1,0 +1,34 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\unreal projects\\shootingsam\\shootingsam\\source\\shootingsam\\variant_sidescrolling\\gameplay\\sidescrollingpickup.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\unreal projects\\shootingsam\\shootingsam\\intermediate\\build\\win64\\x64\\shootingsameditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "f:\\unreal projects\\shootingsam\\shootingsam\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\shootingsam\\definitions.shootingsam.h",
+            "f:\\unreal projects\\shootingsam\\shootingsam\\source\\shootingsam\\variant_sidescrolling\\gameplay\\sidescrollingpickup.h",
+            "f:\\unreal projects\\shootingsam\\shootingsam\\intermediate\\build\\win64\\unrealeditor\\inc\\shootingsam\\uht\\sidescrollingpickup.generated.h",
+            "f:\\unreal engine\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "f:\\unreal engine\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "f:\\unreal engine\\ue_5.6\\engine\\source\\runtime\\net\\core\\public\\net\\core\\nettoken\\nettokenexportcontext.h",
+            "f:\\unreal engine\\ue_5.6\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "f:\\unreal engine\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "f:\\unreal engine\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "f:\\unreal engine\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "f:\\unreal engine\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "f:\\unreal engine\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "f:\\unreal projects\\shootingsam\\shootingsam\\source\\shootingsam\\variant_sidescrolling\\sidescrollinggamemode.h",
+            "f:\\unreal engine\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "f:\\unreal engine\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "f:\\unreal engine\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "f:\\unreal engine\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "f:\\unreal projects\\shootingsam\\shootingsam\\intermediate\\build\\win64\\unrealeditor\\inc\\shootingsam\\uht\\sidescrollinggamemode.generated.h",
+            "f:\\unreal engine\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\components\\spherecomponent.h",
+            "f:\\unreal engine\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "f:\\unreal engine\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "f:\\unreal engine\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\spherecomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

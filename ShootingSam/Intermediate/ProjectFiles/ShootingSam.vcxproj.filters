@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ShootingSam.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ShootingSam.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ShootingSamEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\ShootingSam">
+      <UniqueIdentifier>{0F4BF71E-221B-386D-A723-FEB9705CBCD3}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ShootingSam\ShootingSam.Build.cs">
+      <Filter>Source\ShootingSam</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ShootingSam\ShootingSam.cpp">
+      <Filter>Source\ShootingSam</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\ShootingSam.h">
+      <Filter>Source\ShootingSam</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\ShootingSamCharacter.cpp">
+      <Filter>Source\ShootingSam</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\ShootingSamCharacter.h">
+      <Filter>Source\ShootingSam</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\ShootingSamGameMode.cpp">
+      <Filter>Source\ShootingSam</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\ShootingSamGameMode.h">
+      <Filter>Source\ShootingSam</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\ShootingSamPlayerController.cpp">
+      <Filter>Source\ShootingSam</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\ShootingSamPlayerController.h">
+      <Filter>Source\ShootingSam</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShootingSam\Variant_Combat">
+      <UniqueIdentifier>{48DE5E36-3B45-301B-B324-F4E9619275DC}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\CombatCharacter.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\CombatCharacter.h">
+      <Filter>Source\ShootingSam\Variant_Combat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\CombatGameMode.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\CombatGameMode.h">
+      <Filter>Source\ShootingSam\Variant_Combat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\CombatPlayerController.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\CombatPlayerController.h">
+      <Filter>Source\ShootingSam\Variant_Combat</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShootingSam\Variant_Combat\AI">
+      <UniqueIdentifier>{6C01057B-2920-323E-9229-336125BF1553}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\AI\CombatAIController.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\AI\CombatAIController.h">
+      <Filter>Source\ShootingSam\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\AI\CombatEnemy.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\AI\CombatEnemy.h">
+      <Filter>Source\ShootingSam\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\AI\CombatEnemySpawner.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\AI\CombatEnemySpawner.h">
+      <Filter>Source\ShootingSam\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\AI\CombatStateTreeUtility.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\AI\CombatStateTreeUtility.h">
+      <Filter>Source\ShootingSam\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\AI\EnvQueryContext_Player.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\AI\EnvQueryContext_Player.h">
+      <Filter>Source\ShootingSam\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShootingSam\Variant_Combat\Animation">
+      <UniqueIdentifier>{07F83714-B1B5-3EE6-AC67-CD268C2DC44B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\Animation\AnimNotify_CheckChargedAttack.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\Animation\AnimNotify_CheckChargedAttack.h">
+      <Filter>Source\ShootingSam\Variant_Combat\Animation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\Animation\AnimNotify_CheckCombo.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\Animation\AnimNotify_CheckCombo.h">
+      <Filter>Source\ShootingSam\Variant_Combat\Animation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\Animation\AnimNotify_DoAttackTrace.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\Animation\AnimNotify_DoAttackTrace.h">
+      <Filter>Source\ShootingSam\Variant_Combat\Animation</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShootingSam\Variant_Combat\Gameplay">
+      <UniqueIdentifier>{78F3FC3D-48BD-3B55-A3DA-4AC592270ADD}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\Gameplay\CombatActivationVolume.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\Gameplay\CombatActivationVolume.h">
+      <Filter>Source\ShootingSam\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\Gameplay\CombatCheckpointVolume.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\Gameplay\CombatCheckpointVolume.h">
+      <Filter>Source\ShootingSam\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\Gameplay\CombatDamageableBox.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\Gameplay\CombatDamageableBox.h">
+      <Filter>Source\ShootingSam\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\Gameplay\CombatDummy.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\Gameplay\CombatDummy.h">
+      <Filter>Source\ShootingSam\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\Gameplay\CombatLavaFloor.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\Gameplay\CombatLavaFloor.h">
+      <Filter>Source\ShootingSam\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShootingSam\Variant_Combat\Interfaces">
+      <UniqueIdentifier>{40CB10C8-3251-3F88-ABCC-171D9C4AC2A5}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\Interfaces\CombatActivatable.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\Interfaces\CombatActivatable.h">
+      <Filter>Source\ShootingSam\Variant_Combat\Interfaces</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\Interfaces\CombatAttacker.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\Interfaces\CombatAttacker.h">
+      <Filter>Source\ShootingSam\Variant_Combat\Interfaces</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\Interfaces\CombatDamageable.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\Interfaces\CombatDamageable.h">
+      <Filter>Source\ShootingSam\Variant_Combat\Interfaces</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShootingSam\Variant_Combat\UI">
+      <UniqueIdentifier>{51B0DEA8-BCB3-3162-9F48-878B92E3A0DA}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Combat\UI\CombatLifeBar.cpp">
+      <Filter>Source\ShootingSam\Variant_Combat\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Combat\UI\CombatLifeBar.h">
+      <Filter>Source\ShootingSam\Variant_Combat\UI</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShootingSam\Variant_Platforming">
+      <UniqueIdentifier>{FBF6F008-E458-3D43-B216-9E4B1FF1F491}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Platforming\PlatformingCharacter.cpp">
+      <Filter>Source\ShootingSam\Variant_Platforming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Platforming\PlatformingCharacter.h">
+      <Filter>Source\ShootingSam\Variant_Platforming</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Platforming\PlatformingGameMode.cpp">
+      <Filter>Source\ShootingSam\Variant_Platforming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Platforming\PlatformingGameMode.h">
+      <Filter>Source\ShootingSam\Variant_Platforming</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Platforming\PlatformingPlayerController.cpp">
+      <Filter>Source\ShootingSam\Variant_Platforming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Platforming\PlatformingPlayerController.h">
+      <Filter>Source\ShootingSam\Variant_Platforming</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShootingSam\Variant_Platforming\Animation">
+      <UniqueIdentifier>{4E073BFF-9AA9-3308-87EE-D440AA3CBE0C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_Platforming\Animation\AnimNotify_EndDash.cpp">
+      <Filter>Source\ShootingSam\Variant_Platforming\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_Platforming\Animation\AnimNotify_EndDash.h">
+      <Filter>Source\ShootingSam\Variant_Platforming\Animation</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShootingSam\Variant_SideScrolling">
+      <UniqueIdentifier>{E3DCD49C-04CC-3F97-B35B-FD4839BD66B4}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_SideScrolling\SideScrollingCameraManager.cpp">
+      <Filter>Source\ShootingSam\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_SideScrolling\SideScrollingCameraManager.h">
+      <Filter>Source\ShootingSam\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_SideScrolling\SideScrollingCharacter.cpp">
+      <Filter>Source\ShootingSam\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_SideScrolling\SideScrollingCharacter.h">
+      <Filter>Source\ShootingSam\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_SideScrolling\SideScrollingGameMode.cpp">
+      <Filter>Source\ShootingSam\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_SideScrolling\SideScrollingGameMode.h">
+      <Filter>Source\ShootingSam\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_SideScrolling\SideScrollingPlayerController.cpp">
+      <Filter>Source\ShootingSam\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_SideScrolling\SideScrollingPlayerController.h">
+      <Filter>Source\ShootingSam\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShootingSam\Variant_SideScrolling\AI">
+      <UniqueIdentifier>{E13F0EA5-2492-3508-BC87-86DABB860B43}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_SideScrolling\AI\SideScrollingAIController.cpp">
+      <Filter>Source\ShootingSam\Variant_SideScrolling\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_SideScrolling\AI\SideScrollingAIController.h">
+      <Filter>Source\ShootingSam\Variant_SideScrolling\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_SideScrolling\AI\SideScrollingNPC.cpp">
+      <Filter>Source\ShootingSam\Variant_SideScrolling\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_SideScrolling\AI\SideScrollingNPC.h">
+      <Filter>Source\ShootingSam\Variant_SideScrolling\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_SideScrolling\AI\SideScrollingStateTreeUtility.cpp">
+      <Filter>Source\ShootingSam\Variant_SideScrolling\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_SideScrolling\AI\SideScrollingStateTreeUtility.h">
+      <Filter>Source\ShootingSam\Variant_SideScrolling\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShootingSam\Variant_SideScrolling\Gameplay">
+      <UniqueIdentifier>{7B87D119-4C3F-3E2B-AF8B-01CAC174F7CE}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_SideScrolling\Gameplay\SideScrollingJumpPad.cpp">
+      <Filter>Source\ShootingSam\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_SideScrolling\Gameplay\SideScrollingJumpPad.h">
+      <Filter>Source\ShootingSam\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_SideScrolling\Gameplay\SideScrollingMovingPlatform.cpp">
+      <Filter>Source\ShootingSam\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_SideScrolling\Gameplay\SideScrollingMovingPlatform.h">
+      <Filter>Source\ShootingSam\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_SideScrolling\Gameplay\SideScrollingPickup.cpp">
+      <Filter>Source\ShootingSam\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_SideScrolling\Gameplay\SideScrollingPickup.h">
+      <Filter>Source\ShootingSam\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_SideScrolling\Gameplay\SideScrollingSoftPlatform.cpp">
+      <Filter>Source\ShootingSam\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_SideScrolling\Gameplay\SideScrollingSoftPlatform.h">
+      <Filter>Source\ShootingSam\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShootingSam\Variant_SideScrolling\Interfaces">
+      <UniqueIdentifier>{33D2FD4E-7936-3B5D-8BA1-D78543617CEC}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_SideScrolling\Interfaces\SideScrollingInteractable.cpp">
+      <Filter>Source\ShootingSam\Variant_SideScrolling\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_SideScrolling\Interfaces\SideScrollingInteractable.h">
+      <Filter>Source\ShootingSam\Variant_SideScrolling\Interfaces</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShootingSam\Variant_SideScrolling\UI">
+      <UniqueIdentifier>{A6EC2D1C-ABBE-3439-AADE-47BA97CAC558}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShootingSam\Variant_SideScrolling\UI\SideScrollingUI.cpp">
+      <Filter>Source\ShootingSam\Variant_SideScrolling\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\Variant_SideScrolling\UI\SideScrollingUI.h">
+      <Filter>Source\ShootingSam\Variant_SideScrolling\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
