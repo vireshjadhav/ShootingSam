@@ -23,6 +23,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	AController* OwnerController;
+
 	UPROPERTY(VisibleAnywhere)
 	USceneComponent* SceneRoot;
 

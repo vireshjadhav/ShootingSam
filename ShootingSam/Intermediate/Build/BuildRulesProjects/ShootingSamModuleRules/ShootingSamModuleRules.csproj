@@ -18,4 +18,7 @@
   <Compile Include="..\..\..\..\Source\ShootingSamEditor.Target.cs"><Link>Source\ShootingSamEditor.Target.cs</Link></Compile>
   <Compile Include="..\..\..\..\Source\ShootingSam\ShootingSam.Build.cs"><Link>Source\ShootingSam\ShootingSam.Build.cs</Link></Compile>
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Build" Version="17.14.28" />
+  </ItemGroup>
 </Project>

@@ -60,6 +60,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Build": {
+              "target": "Package",
+              "version": "[17.14.28, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -133,6 +139,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Build": {
+              "target": "Package",
+              "version": "[17.14.28, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -210,6 +222,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.Build": {
+              "target": "Package",
+              "version": "[17.14.28, )"
+            },
             "Microsoft.CSharp": {
               "target": "Package",
               "version": "[4.7.0, )"
@@ -617,7 +633,7 @@
             "Microsoft.Build": {
               "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[17.11.4, )"
+              "version": "[17.14.28, )"
             },
             "Microsoft.Build.Locator": {
               "target": "Package",
@@ -1011,6 +1027,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.Build": {
+              "target": "Package",
+              "version": "[17.14.28, )"
+            },
             "Microsoft.CSharp": {
               "target": "Package",
               "version": "[4.7.0, )"
@@ -1108,6 +1128,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.Build": {
+              "target": "Package",
+              "version": "[17.14.28, )"
+            },
             "Microsoft.CodeAnalysis.CSharp": {
               "target": "Package",
               "version": "[4.11.0, )"
@@ -1236,6 +1260,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Build": {
+              "target": "Package",
+              "version": "[17.14.28, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
