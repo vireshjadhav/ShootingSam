@@ -7,7 +7,8 @@
 			"files": [
 				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Blueprints/BP_ShooterCharacter.uasset",
 				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Blueprints/BP_Rifle.uasset",
-				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/ParagonWraith/Characters/Heroes/Wraith/Meshes/Wraith_Skeleton.uasset"
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/ParagonWraith/Characters/Heroes/Wraith/Meshes/Wraith_Skeleton.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Maps/ShooterSam_Level1.umap"
 			]
 		}
 	]

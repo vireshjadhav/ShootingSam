@@ -25,12 +25,10 @@
 		],
 		"Module.ShootingSam.2.cpp.obj": [
 			"EnvQueryContext_Player.gen.cpp.obj",
-			"Gun.gen.cpp.obj",
 			"HUDWidget.gen.cpp.obj",
 			"PlatformingCharacter.gen.cpp.obj",
 			"PlatformingGameMode.gen.cpp.obj",
 			"PlatformingPlayerController.gen.cpp.obj",
-			"ShootingSam.init.gen.cpp.obj",
 			"ShootingSamCharacter.gen.cpp.obj",
 			"ShootingSamGameMode.gen.cpp.obj",
 			"ShootingSamPlayerController.gen.cpp.obj",
@@ -50,6 +48,7 @@
 			"PerModuleInline.gen.cpp.obj",
 			"HUDWidget.cpp.obj",
 			"ShootingSam.cpp.obj",
+			"ShootingSamCharacter.cpp.obj",
 			"ShootingSamGameMode.cpp.obj",
 			"ShootingSamPlayerController.cpp.obj",
 			"CombatAIController.cpp.obj",
@@ -66,8 +65,9 @@
 			"CombatActivationVolume.cpp.obj",
 			"CombatCheckpointVolume.cpp.obj",
 			"CombatDamageableBox.cpp.obj",
-			"Gun.cpp.obj",
-			"ShootingSamCharacter.cpp.obj"
+			"Gun.gen.cpp.obj",
+			"ShootingSam.init.gen.cpp.obj",
+			"Gun.cpp.obj"
 		],
 		"Module.ShootingSam.3.cpp.obj": [
 			"CombatDummy.cpp.obj",
