@@ -12,10 +12,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeShootingSamCharacter() {}
 
 // ********** Begin Cross Module References ********************************************************
+COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
+SHOOTINGSAM_API UClass* Z_Construct_UClass_AGun_NoRegister();
 SHOOTINGSAM_API UClass* Z_Construct_UClass_AShootingSamCharacter();
 SHOOTINGSAM_API UClass* Z_Construct_UClass_AShootingSamCharacter_NoRegister();
 UPackage* Z_Construct_UPackage__Script_ShootingSam();
@@ -330,6 +332,10 @@ struct Z_Construct_UClass_AShootingSamCharacter_Statics
 		{ "ToolTip", "Shoot Input Action" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GunClass_MetaData[] = {
+		{ "Category", "ShootingSamCharacter" },
+		{ "ModuleRelativePath", "ShootingSamCharacter.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
@@ -338,6 +344,7 @@ struct Z_Construct_UClass_AShootingSamCharacter_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MouseLookAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ShootAction;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_GunClass;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -359,6 +366,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShootingSamCh
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShootingSamCharacter, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LookAction_MetaData), NewProp_LookAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_MouseLookAction = { "MouseLookAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShootingSamCharacter, MouseLookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MouseLookAction_MetaData), NewProp_MouseLookAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_ShootAction = { "ShootAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShootingSamCharacter, ShootAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ShootAction_MetaData), NewProp_ShootAction_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_GunClass = { "GunClass", nullptr, (EPropertyFlags)0x0014000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShootingSamCharacter, GunClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AGun_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GunClass_MetaData), NewProp_GunClass_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AShootingSamCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_CameraBoom,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_FollowCamera,
@@ -367,6 +375,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AShooting
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_LookAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_MouseLookAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_ShootAction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_GunClass,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AShootingSamCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AShootingSamCharacter_Statics::DependentSingletons[])() = {
@@ -405,10 +414,10 @@ AShootingSamCharacter::~AShootingSamCharacter() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamCharacter_h__Script_ShootingSam_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AShootingSamCharacter, AShootingSamCharacter::StaticClass, TEXT("AShootingSamCharacter"), &Z_Registration_Info_UClass_AShootingSamCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShootingSamCharacter), 4103489551U) },
+		{ Z_Construct_UClass_AShootingSamCharacter, AShootingSamCharacter::StaticClass, TEXT("AShootingSamCharacter"), &Z_Registration_Info_UClass_AShootingSamCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShootingSamCharacter), 1932463604U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamCharacter_h__Script_ShootingSam_1835674838(TEXT("/Script/ShootingSam"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamCharacter_h__Script_ShootingSam_441326839(TEXT("/Script/ShootingSam"),
 	Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamCharacter_h__Script_ShootingSam_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamCharacter_h__Script_ShootingSam_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

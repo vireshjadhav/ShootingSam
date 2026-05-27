@@ -29,7 +29,6 @@
 			"PlatformingCharacter.gen.cpp.obj",
 			"PlatformingGameMode.gen.cpp.obj",
 			"PlatformingPlayerController.gen.cpp.obj",
-			"ShootingSam.init.gen.cpp.obj",
 			"ShootingSamCharacter.gen.cpp.obj",
 			"ShootingSamGameMode.gen.cpp.obj",
 			"ShootingSamPlayerController.gen.cpp.obj",
@@ -65,6 +64,12 @@
 			"CombatActivationVolume.cpp.obj",
 			"CombatCheckpointVolume.cpp.obj",
 			"CombatDamageableBox.cpp.obj",
+			"Gun.gen.cpp.obj",
+			"ShootingSam.init.gen.cpp.obj",
+			"Gun.cpp.obj",
+			"ShootingSamCharacter.cpp.obj"
+		],
+		"Module.ShootingSam.3.cpp.obj": [
 			"CombatDummy.cpp.obj",
 			"CombatLavaFloor.cpp.obj",
 			"CombatActivatable.cpp.obj",
@@ -73,9 +78,6 @@
 			"CombatLifeBar.cpp.obj",
 			"AnimNotify_EndDash.cpp.obj",
 			"PlatformingCharacter.cpp.obj",
-			"ShootingSamCharacter.cpp.obj"
-		],
-		"Module.ShootingSam.3.cpp.obj": [
 			"PlatformingGameMode.cpp.obj",
 			"PlatformingPlayerController.cpp.obj",
 			"SideScrollingAIController.cpp.obj",

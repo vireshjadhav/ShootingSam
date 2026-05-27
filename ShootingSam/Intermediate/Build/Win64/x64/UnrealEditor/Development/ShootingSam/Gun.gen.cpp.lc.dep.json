@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\unreal projects\\shootingsam\\shootingsam\\intermediate\\build\\win64\\unrealeditor\\inc\\shootingsam\\uht\\gun.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\unreal projects\\shootingsam\\shootingsam\\intermediate\\build\\win64\\x64\\shootingsameditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "f:\\unreal projects\\shootingsam\\shootingsam\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\shootingsam\\definitions.shootingsam.h",
+            "f:\\unreal projects\\shootingsam\\shootingsam\\source\\shootingsam\\gun.h",
+            "f:\\unreal projects\\shootingsam\\shootingsam\\intermediate\\build\\win64\\unrealeditor\\inc\\shootingsam\\uht\\gun.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
