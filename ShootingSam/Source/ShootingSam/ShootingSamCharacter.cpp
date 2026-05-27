@@ -65,6 +65,9 @@ void AShootingSamCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInp
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AShootingSamCharacter::Look);
+
+		// Shooting
+		EnhancedInputComponent->BindAction(ShootAction, ETriggerEvent::Started, this, &AShootingSamCharacter::Shoot);
 	}
 	else
 	{
@@ -88,6 +91,11 @@ void AShootingSamCharacter::Look(const FInputActionValue& Value)
 
 	// route the input
 	DoLook(LookAxisVector.X, LookAxisVector.Y);
+}
+
+void AShootingSamCharacter::Shoot()
+{
+	UE_LOG(LogTemp, Display, TEXT("Shoot!"));
 }
 
 void AShootingSamCharacter::DoMove(float Right, float Forward)
