@@ -60,12 +60,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.Build": {
-              "target": "Package",
-              "version": "[17.14.28, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -139,12 +133,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.Build": {
-              "target": "Package",
-              "version": "[17.14.28, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -1260,12 +1248,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.Build": {
-              "target": "Package",
-              "version": "[17.14.28, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

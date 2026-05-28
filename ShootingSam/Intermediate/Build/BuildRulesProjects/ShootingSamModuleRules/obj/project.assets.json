@@ -2372,7 +2372,6 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "EpicGames.Build": "1.0.0",
-          "Microsoft.Build": "17.14.28",
           "UE5Rules": "1.0.0",
           "UnrealBuildTool": "1.0.0"
         },
@@ -2388,7 +2387,6 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "EpicGames.Build": "1.0.0",
-          "Microsoft.Build": "17.14.28",
           "UnrealBuildTool": "1.0.0"
         },
         "compile": {
@@ -7260,7 +7258,6 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "EpicGames.Build >= 1.0.0",
-      "Microsoft.Build >= 17.14.28",
       "UE5ProgramRules >= 1.0.0",
       "UE5Rules >= 1.0.0",
       "UnrealBuildTool >= 1.0.0"
@@ -7329,12 +7326,6 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
-        "dependencies": {
-          "Microsoft.Build": {
-            "target": "Package",
-            "version": "[17.14.28, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",

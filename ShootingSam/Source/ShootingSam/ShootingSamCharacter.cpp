@@ -54,6 +54,8 @@ void AShootingSamCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
+	OnTakeAnyDamage.AddDynamic(this, &AShootingSamCharacter::OnDamageTaken);
+
 	GetMesh()->HideBoneByName("weapon_r", EPhysBodyOp::PBO_None);
 
 	Gun = GetWorld()->SpawnActor<AGun>(GunClass);
@@ -154,4 +156,9 @@ void AShootingSamCharacter::DoJumpEnd()
 {
 	// signal the character to stop jumping
 	StopJumping();
+}
+
+void AShootingSamCharacter::OnDamageTaken(AActor* DamagedActor, float Damage, const UDamageType* DamageType, AController* InstigatedBy, AActor* DamageCauser)
+{
+	UE_LOG(LogTemp, Display, TEXT("Damage Taken: %f"), Damage);
 }
