@@ -22,7 +22,8 @@
 				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/ParagonWraith/FX/Materials/Smoke/DirectionalLit/M_residualMuzzleSmoke_Inst.uasset",
 				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/ParagonWraith/FX/Materials/Smoke/DirectionalLit/M_ResidualMuzzleSmoke_Master.uasset",
 				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/ParagonWraith/FX/Particles/Abilities/Primary/FX/P_Wraith_Primary_MuzzleFlash_Converted.uasset",
-				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush40_StaticMesh.uasset"
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush40_StaticMesh.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Animation/ABP_ShooterCharacter.uasset"
 			]
 		}
 	]

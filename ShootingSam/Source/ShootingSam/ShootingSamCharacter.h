@@ -105,11 +105,18 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
-
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AGun> GunClass;
 
 	AGun* Gun;
+	
+	UPROPERTY(EditAnywhere)
+	float MaxHealth = 100.0f;
+
+	float Health;
+
+	UPROPERTY(BlueprintReadOnly)
+	bool IsAlive = true;
 
 	UFUNCTION()
 	void OnDamageTaken(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
