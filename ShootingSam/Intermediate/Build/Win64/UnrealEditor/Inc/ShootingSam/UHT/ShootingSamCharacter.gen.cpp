@@ -405,6 +405,14 @@ struct Z_Construct_UClass_AShootingSamCharacter_Statics
 		{ "Category", "ShootingSamCharacter" },
 		{ "ModuleRelativePath", "ShootingSamCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxHealth_MetaData[] = {
+		{ "Category", "ShootingSamCharacter" },
+		{ "ModuleRelativePath", "ShootingSamCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IsAlive_MetaData[] = {
+		{ "Category", "ShootingSamCharacter" },
+		{ "ModuleRelativePath", "ShootingSamCharacter.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
@@ -414,6 +422,9 @@ struct Z_Construct_UClass_AShootingSamCharacter_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MouseLookAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ShootAction;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_GunClass;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxHealth;
+	static void NewProp_IsAlive_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_IsAlive;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -437,6 +448,12 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShootingSamCh
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_MouseLookAction = { "MouseLookAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShootingSamCharacter, MouseLookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MouseLookAction_MetaData), NewProp_MouseLookAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_ShootAction = { "ShootAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShootingSamCharacter, ShootAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ShootAction_MetaData), NewProp_ShootAction_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_GunClass = { "GunClass", nullptr, (EPropertyFlags)0x0014000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShootingSamCharacter, GunClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AGun_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GunClass_MetaData), NewProp_GunClass_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_MaxHealth = { "MaxHealth", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShootingSamCharacter, MaxHealth), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxHealth_MetaData), NewProp_MaxHealth_MetaData) };
+void Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_IsAlive_SetBit(void* Obj)
+{
+	((AShootingSamCharacter*)Obj)->IsAlive = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_IsAlive = { "IsAlive", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AShootingSamCharacter), &Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_IsAlive_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IsAlive_MetaData), NewProp_IsAlive_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AShootingSamCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_CameraBoom,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_FollowCamera,
@@ -446,6 +463,8 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AShooting
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_MouseLookAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_ShootAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_GunClass,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_MaxHealth,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamCharacter_Statics::NewProp_IsAlive,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AShootingSamCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AShootingSamCharacter_Statics::DependentSingletons[])() = {
@@ -484,10 +503,10 @@ AShootingSamCharacter::~AShootingSamCharacter() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamCharacter_h__Script_ShootingSam_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AShootingSamCharacter, AShootingSamCharacter::StaticClass, TEXT("AShootingSamCharacter"), &Z_Registration_Info_UClass_AShootingSamCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShootingSamCharacter), 3587347812U) },
+		{ Z_Construct_UClass_AShootingSamCharacter, AShootingSamCharacter::StaticClass, TEXT("AShootingSamCharacter"), &Z_Registration_Info_UClass_AShootingSamCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShootingSamCharacter), 323833976U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamCharacter_h__Script_ShootingSam_2666945238(TEXT("/Script/ShootingSam"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamCharacter_h__Script_ShootingSam_2892106323(TEXT("/Script/ShootingSam"),
 	Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamCharacter_h__Script_ShootingSam_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamCharacter_h__Script_ShootingSam_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
