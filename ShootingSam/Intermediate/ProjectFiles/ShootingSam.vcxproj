@@ -266,6 +266,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\ShootingSam\HUDWidget.h"/>
+    <ClCompile Include="..\..\Source\ShootingSam\ShooterAI.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\ShooterAI.h"/>
     <None Include="..\..\Source\ShootingSam\ShootingSam.Build.cs"/>
     <ClCompile Include="..\..\Source\ShootingSam\ShootingSam.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

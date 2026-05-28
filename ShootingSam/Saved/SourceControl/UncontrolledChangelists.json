@@ -23,7 +23,25 @@
 				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/ParagonWraith/FX/Materials/Smoke/DirectionalLit/M_ResidualMuzzleSmoke_Master.uasset",
 				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/ParagonWraith/FX/Particles/Abilities/Primary/FX/P_Wraith_Primary_MuzzleFlash_Converted.uasset",
 				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush40_StaticMesh.uasset",
-				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Animation/ABP_ShooterCharacter.uasset"
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Animation/ABP_ShooterCharacter.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/AI/BP_ShooterAI.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush21_StaticMesh.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush22_StaticMesh.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush23_StaticMesh.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush25_StaticMesh.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush35_StaticMesh.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush39_StaticMesh.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush41_StaticMesh.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush28_StaticMesh.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush31_StaticMesh.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush32_StaticMesh.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush33_StaticMesh.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush44_StaticMesh.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush43_StaticMesh.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush34_StaticMesh.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush42_StaticMesh.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush36_StaticMesh.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush2_StaticMesh.uasset"
 			]
 		}
 	]
