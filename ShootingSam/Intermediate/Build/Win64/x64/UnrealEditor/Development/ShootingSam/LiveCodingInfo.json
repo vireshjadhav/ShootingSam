@@ -25,11 +25,10 @@
 		],
 		"Module.ShootingSam.2.cpp.obj": [
 			"EnvQueryContext_Player.gen.cpp.obj",
+			"HUDWidget.gen.cpp.obj",
 			"PlatformingCharacter.gen.cpp.obj",
 			"PlatformingGameMode.gen.cpp.obj",
 			"PlatformingPlayerController.gen.cpp.obj",
-			"ShootingSam.init.gen.cpp.obj",
-			"ShootingSamCharacter.gen.cpp.obj",
 			"ShootingSamGameMode.gen.cpp.obj",
 			"ShootingSamPlayerController.gen.cpp.obj",
 			"SideScrollingAIController.gen.cpp.obj",
@@ -46,8 +45,8 @@
 			"SideScrollingStateTreeUtility.gen.cpp.obj",
 			"SideScrollingUI.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
+			"HUDWidget.cpp.obj",
 			"ShootingSam.cpp.obj",
-			"ShootingSamCharacter.cpp.obj",
 			"ShootingSamGameMode.cpp.obj",
 			"ShootingSamPlayerController.cpp.obj",
 			"CombatAIController.cpp.obj",
@@ -59,6 +58,13 @@
 			"AnimNotify_CheckCombo.cpp.obj",
 			"AnimNotify_DoAttackTrace.cpp.obj",
 			"CombatCharacter.cpp.obj",
+			"Gun.gen.cpp.obj",
+			"ShootingSam.init.gen.cpp.obj",
+			"ShootingSamCharacter.gen.cpp.obj",
+			"Gun.cpp.obj",
+			"ShootingSamCharacter.cpp.obj"
+		],
+		"Module.ShootingSam.3.cpp.obj": [
 			"CombatGameMode.cpp.obj",
 			"CombatPlayerController.cpp.obj",
 			"CombatActivationVolume.cpp.obj",
@@ -74,9 +80,7 @@
 			"PlatformingCharacter.cpp.obj",
 			"PlatformingGameMode.cpp.obj",
 			"PlatformingPlayerController.cpp.obj",
-			"SideScrollingAIController.cpp.obj"
-		],
-		"Module.ShootingSam.3.cpp.obj": [
+			"SideScrollingAIController.cpp.obj",
 			"SideScrollingNPC.cpp.obj",
 			"SideScrollingStateTreeUtility.cpp.obj",
 			"SideScrollingJumpPad.cpp.obj",

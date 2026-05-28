@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class AShootingSamPlayerController *********************************************
 SHOOTINGSAM_API UClass* Z_Construct_UClass_AShootingSamPlayerController_NoRegister();
 
-#define FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamPlayerController_h_19_INCLASS_NO_PURE_DECLS \
+#define FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamPlayerController_h_23_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAShootingSamPlayerController(); \
 	friend struct Z_Construct_UClass_AShootingSamPlayerController_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(AShootingSamPlayerController)
 
 
-#define FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamPlayerController_h_19_ENHANCED_CONSTRUCTORS \
+#define FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamPlayerController_h_23_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AShootingSamPlayerController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -42,12 +42,12 @@ public: \
 	NO_API virtual ~AShootingSamPlayerController();
 
 
-#define FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamPlayerController_h_16_PROLOG
-#define FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamPlayerController_h_19_GENERATED_BODY \
+#define FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamPlayerController_h_20_PROLOG
+#define FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamPlayerController_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamPlayerController_h_19_INCLASS_NO_PURE_DECLS \
-	FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamPlayerController_h_19_ENHANCED_CONSTRUCTORS \
+	FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamPlayerController_h_23_INCLASS_NO_PURE_DECLS \
+	FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamPlayerController_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
