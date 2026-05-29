@@ -51,17 +51,17 @@
 			"PerModuleInline.gen.cpp.obj",
 			"Gun.cpp.obj",
 			"HUDWidget.cpp.obj",
+			"ShooterAI.cpp.obj",
 			"ShootingSam.cpp.obj",
 			"ShootingSamCharacter.cpp.obj",
+			"ShootingSamGameMode.cpp.obj",
 			"ShootingSamPlayerController.cpp.obj",
 			"CombatAIController.cpp.obj",
 			"CombatEnemy.cpp.obj",
 			"CombatEnemySpawner.cpp.obj",
 			"CombatStateTreeUtility.cpp.obj",
 			"EnvQueryContext_Player.cpp.obj",
-			"AnimNotify_CheckChargedAttack.cpp.obj",
-			"ShooterAI.cpp.obj",
-			"ShootingSamGameMode.cpp.obj"
+			"AnimNotify_CheckChargedAttack.cpp.obj"
 		],
 		"Module.ShootingSam.3.cpp.obj": [
 			"AnimNotify_CheckCombo.cpp.obj",
