@@ -41,7 +41,9 @@
 				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush34_StaticMesh.uasset",
 				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush42_StaticMesh.uasset",
 				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush36_StaticMesh.uasset",
-				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush2_StaticMesh.uasset"
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/Meshes/Geometry/Box_Brush2_StaticMesh.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/AI/BT_EnemyAI.uasset",
+				"F:/Unreal Projects/ShootingSam/ShootingSam/Content/Core/AI/BB_EnemyAI.uasset"
 			]
 		}
 	]

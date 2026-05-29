@@ -26,7 +26,6 @@
 #include "F:/Unreal Projects/ShootingSam/ShootingSam/Source/ShootingSam/HUDWidget.cpp"
 #include "F:/Unreal Projects/ShootingSam/ShootingSam/Source/ShootingSam/ShootingSam.cpp"
 #include "F:/Unreal Projects/ShootingSam/ShootingSam/Source/ShootingSam/ShootingSamCharacter.cpp"
-#include "F:/Unreal Projects/ShootingSam/ShootingSam/Source/ShootingSam/ShootingSamGameMode.cpp"
 #include "F:/Unreal Projects/ShootingSam/ShootingSam/Source/ShootingSam/ShootingSamPlayerController.cpp"
 #include "F:/Unreal Projects/ShootingSam/ShootingSam/Source/ShootingSam/Variant_Combat/AI/CombatAIController.cpp"
 #include "F:/Unreal Projects/ShootingSam/ShootingSam/Source/ShootingSam/Variant_Combat/AI/CombatEnemy.cpp"
@@ -35,5 +34,3 @@
 #include "F:/Unreal Projects/ShootingSam/ShootingSam/Source/ShootingSam/Variant_Combat/AI/EnvQueryContext_Player.cpp"
 #include "F:/Unreal Projects/ShootingSam/ShootingSam/Source/ShootingSam/Variant_Combat/Animation/AnimNotify_CheckChargedAttack.cpp"
 #include "F:/Unreal Projects/ShootingSam/ShootingSam/Source/ShootingSam/Variant_Combat/Animation/AnimNotify_CheckCombo.cpp"
-#include "F:/Unreal Projects/ShootingSam/ShootingSam/Source/ShootingSam/Variant_Combat/Animation/AnimNotify_DoAttackTrace.cpp"
-#include "F:/Unreal Projects/ShootingSam/ShootingSam/Source/ShootingSam/Variant_Combat/CombatCharacter.cpp"

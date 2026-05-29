@@ -4,6 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "AIController.h"
+
+#include "ShootingSamCharacter.h"
+
 #include "ShooterAI.generated.h"
 
 /**
@@ -19,4 +22,14 @@ protected:
 	virtual void BeginPlay() override;
 
 	virtual void Tick(float deltaTime) override;
+
+public:
+
+	UPROPERTY(EditAnywhere)
+	UBehaviorTree* EnemyAIBehaviorTree;
+
+	AShootingSamCharacter* PlayerCharacter;
+	AShootingSamCharacter* MyCharacter;
+
+	void StartBehaviorTree(AShootingSamCharacter* Player);
 };

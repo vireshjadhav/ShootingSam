@@ -8,12 +8,14 @@
 void AShooterAI::BeginPlay()
 {
 	Super::BeginPlay();
+
+
 }
 
 void AShooterAI::Tick(float deltaTime)
 {
 	Super::Tick(deltaTime);
-
+	/*
 	APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 	if (PlayerPawn)
 	{
@@ -27,5 +29,21 @@ void AShooterAI::Tick(float deltaTime)
 			ClearFocus(EAIFocusPriority::Gameplay);
 			StopMovement();
 		}
+	}
+	*/
+}
+
+void AShooterAI::StartBehaviorTree(AShootingSamCharacter* Player)
+{
+	if (EnemyAIBehaviorTree)
+	{
+		MyCharacter = Cast<AShootingSamCharacter>(GetPawn());
+
+		if (Player)
+		{
+			PlayerCharacter = Player;
+		}
+
+		RunBehaviorTree(EnemyAIBehaviorTree);
 	}
 }

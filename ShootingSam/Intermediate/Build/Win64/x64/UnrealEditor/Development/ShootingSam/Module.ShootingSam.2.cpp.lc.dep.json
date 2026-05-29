@@ -338,7 +338,6 @@
             "f:\\unreal engine\\ue_5.6\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedplayerinput.generated.h",
             "f:\\unreal engine\\ue_5.6\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputsubsysteminterface.generated.h",
             "f:\\unreal engine\\ue_5.6\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputsubsystems.generated.h",
-            "f:\\unreal projects\\shootingsam\\shootingsam\\source\\shootingsam\\shootingsamgamemode.cpp",
             "f:\\unreal projects\\shootingsam\\shootingsam\\source\\shootingsam\\shootingsamplayercontroller.cpp",
             "f:\\unreal engine\\ue_5.6\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputmappingcontext.h",
             "f:\\unreal engine\\ue_5.6\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\enhancedactionkeymapping.h",
@@ -428,15 +427,7 @@
             "f:\\unreal projects\\shootingsam\\shootingsam\\intermediate\\build\\win64\\unrealeditor\\inc\\shootingsam\\uht\\animnotify_checkchargedattack.generated.h",
             "f:\\unreal projects\\shootingsam\\shootingsam\\source\\shootingsam\\variant_combat\\animation\\animnotify_checkcombo.cpp",
             "f:\\unreal projects\\shootingsam\\shootingsam\\source\\shootingsam\\variant_combat\\animation\\animnotify_checkcombo.h",
-            "f:\\unreal projects\\shootingsam\\shootingsam\\intermediate\\build\\win64\\unrealeditor\\inc\\shootingsam\\uht\\animnotify_checkcombo.generated.h",
-            "f:\\unreal projects\\shootingsam\\shootingsam\\source\\shootingsam\\variant_combat\\animation\\animnotify_doattacktrace.cpp",
-            "f:\\unreal projects\\shootingsam\\shootingsam\\source\\shootingsam\\variant_combat\\animation\\animnotify_doattacktrace.h",
-            "f:\\unreal projects\\shootingsam\\shootingsam\\intermediate\\build\\win64\\unrealeditor\\inc\\shootingsam\\uht\\animnotify_doattacktrace.generated.h",
-            "f:\\unreal projects\\shootingsam\\shootingsam\\source\\shootingsam\\variant_combat\\combatcharacter.cpp",
-            "f:\\unreal projects\\shootingsam\\shootingsam\\source\\shootingsam\\variant_combat\\combatcharacter.h",
-            "f:\\unreal projects\\shootingsam\\shootingsam\\intermediate\\build\\win64\\unrealeditor\\inc\\shootingsam\\uht\\combatcharacter.generated.h",
-            "f:\\unreal projects\\shootingsam\\shootingsam\\source\\shootingsam\\variant_combat\\combatplayercontroller.h",
-            "f:\\unreal projects\\shootingsam\\shootingsam\\intermediate\\build\\win64\\unrealeditor\\inc\\shootingsam\\uht\\combatplayercontroller.generated.h"
+            "f:\\unreal projects\\shootingsam\\shootingsam\\intermediate\\build\\win64\\unrealeditor\\inc\\shootingsam\\uht\\animnotify_checkcombo.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
