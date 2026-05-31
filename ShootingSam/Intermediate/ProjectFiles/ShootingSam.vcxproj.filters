@@ -45,6 +45,18 @@
     <ClInclude Include="..\..\Source\ShootingSam\BTService_PlayerLocationIfSeen.h">
       <Filter>Source\ShootingSam</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\BTTaskNode_ShootAtPlayer.cpp">
+      <Filter>Source\ShootingSam</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\BTTaskNode_ShootAtPlayer.h">
+      <Filter>Source\ShootingSam</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\BTTask_ClearBlackboardKey.cpp">
+      <Filter>Source\ShootingSam</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\BTTask_ClearBlackboardKey.h">
+      <Filter>Source\ShootingSam</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\ShootingSam\Gun.cpp">
       <Filter>Source\ShootingSam</Filter>
     </ClCompile>
