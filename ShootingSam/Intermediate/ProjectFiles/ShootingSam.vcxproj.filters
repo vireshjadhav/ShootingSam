@@ -33,6 +33,30 @@
     <Filter Include="Source\ShootingSam">
       <UniqueIdentifier>{0F4BF71E-221B-386D-A723-FEB9705CBCD3}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\ShootingSam\BTService_PlayerLocation.cpp">
+      <Filter>Source\ShootingSam</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\BTService_PlayerLocation.h">
+      <Filter>Source\ShootingSam</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\BTService_PlayerLocationIfSeen.cpp">
+      <Filter>Source\ShootingSam</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\BTService_PlayerLocationIfSeen.h">
+      <Filter>Source\ShootingSam</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\BTTaskNode_ShootAtPlayer.cpp">
+      <Filter>Source\ShootingSam</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\BTTaskNode_ShootAtPlayer.h">
+      <Filter>Source\ShootingSam</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\BTTask_ClearBlackboardKey.cpp">
+      <Filter>Source\ShootingSam</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\BTTask_ClearBlackboardKey.h">
+      <Filter>Source\ShootingSam</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\ShootingSam\Gun.cpp">
       <Filter>Source\ShootingSam</Filter>
     </ClCompile>
@@ -43,6 +67,12 @@
       <Filter>Source\ShootingSam</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\ShootingSam\HUDWidget.h">
+      <Filter>Source\ShootingSam</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShootingSam\ShooterAI.cpp">
+      <Filter>Source\ShootingSam</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\ShooterAI.h">
       <Filter>Source\ShootingSam</Filter>
     </ClInclude>
     <None Include="..\..\Source\ShootingSam\ShootingSam.Build.cs">

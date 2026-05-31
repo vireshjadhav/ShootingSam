@@ -6,6 +6,8 @@
 			"AnimNotify_CheckCombo.gen.cpp.obj",
 			"AnimNotify_DoAttackTrace.gen.cpp.obj",
 			"AnimNotify_EndDash.gen.cpp.obj",
+			"BTService_PlayerLocation.gen.cpp.obj",
+			"BTService_PlayerLocationIfSeen.gen.cpp.obj",
 			"CombatActivatable.gen.cpp.obj",
 			"CombatActivationVolume.gen.cpp.obj",
 			"CombatAIController.gen.cpp.obj",
@@ -21,7 +23,9 @@
 			"CombatLavaFloor.gen.cpp.obj",
 			"CombatLifeBar.gen.cpp.obj",
 			"CombatPlayerController.gen.cpp.obj",
-			"CombatStateTreeUtility.gen.cpp.obj"
+			"CombatStateTreeUtility.gen.cpp.obj",
+			"BTTaskNode_ShootAtPlayer.gen.cpp.obj",
+			"BTTask_ClearBlackboardKey.gen.cpp.obj"
 		],
 		"Module.ShootingSam.2.cpp.obj": [
 			"EnvQueryContext_Player.gen.cpp.obj",
@@ -30,7 +34,6 @@
 			"PlatformingCharacter.gen.cpp.obj",
 			"PlatformingGameMode.gen.cpp.obj",
 			"PlatformingPlayerController.gen.cpp.obj",
-			"ShootingSam.init.gen.cpp.obj",
 			"ShootingSamCharacter.gen.cpp.obj",
 			"ShootingSamGameMode.gen.cpp.obj",
 			"ShootingSamPlayerController.gen.cpp.obj",
@@ -47,9 +50,11 @@
 			"SideScrollingSoftPlatform.gen.cpp.obj",
 			"SideScrollingStateTreeUtility.gen.cpp.obj",
 			"SideScrollingUI.gen.cpp.obj",
-			"PerModuleInline.gen.cpp.obj",
+			"BTService_PlayerLocation.cpp.obj",
+			"BTService_PlayerLocationIfSeen.cpp.obj",
 			"Gun.cpp.obj",
 			"HUDWidget.cpp.obj",
+			"ShooterAI.cpp.obj",
 			"ShootingSam.cpp.obj",
 			"ShootingSamGameMode.cpp.obj",
 			"ShootingSamPlayerController.cpp.obj",
@@ -57,14 +62,19 @@
 			"CombatEnemy.cpp.obj",
 			"CombatEnemySpawner.cpp.obj",
 			"CombatStateTreeUtility.cpp.obj",
+			"ShooterAI.gen.cpp.obj",
+			"ShootingSam.init.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"BTTaskNode_ShootAtPlayer.cpp.obj",
+			"BTTask_ClearBlackboardKey.cpp.obj",
+			"ShootingSamCharacter.cpp.obj"
+		],
+		"Module.ShootingSam.3.cpp.obj": [
 			"EnvQueryContext_Player.cpp.obj",
 			"AnimNotify_CheckChargedAttack.cpp.obj",
 			"AnimNotify_CheckCombo.cpp.obj",
 			"AnimNotify_DoAttackTrace.cpp.obj",
 			"CombatCharacter.cpp.obj",
-			"ShootingSamCharacter.cpp.obj"
-		],
-		"Module.ShootingSam.3.cpp.obj": [
 			"CombatGameMode.cpp.obj",
 			"CombatPlayerController.cpp.obj",
 			"CombatActivationVolume.cpp.obj",

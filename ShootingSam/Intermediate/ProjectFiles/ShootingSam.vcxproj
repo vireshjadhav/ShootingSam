@@ -258,6 +258,22 @@
     <None Include="..\..\Config\DefaultEngine.ini"/>
     <None Include="..\..\Config\DefaultGame.ini"/>
     <None Include="..\..\Config\DefaultInput.ini"/>
+    <ClCompile Include="..\..\Source\ShootingSam\BTService_PlayerLocation.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\BTService_PlayerLocation.h"/>
+    <ClCompile Include="..\..\Source\ShootingSam\BTService_PlayerLocationIfSeen.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\BTService_PlayerLocationIfSeen.h"/>
+    <ClCompile Include="..\..\Source\ShootingSam\BTTaskNode_ShootAtPlayer.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\BTTaskNode_ShootAtPlayer.h"/>
+    <ClCompile Include="..\..\Source\ShootingSam\BTTask_ClearBlackboardKey.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\BTTask_ClearBlackboardKey.h"/>
     <ClCompile Include="..\..\Source\ShootingSam\Gun.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -266,6 +282,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\ShootingSam\HUDWidget.h"/>
+    <ClCompile Include="..\..\Source\ShootingSam\ShooterAI.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShootingSam\ShooterAI.h"/>
     <None Include="..\..\Source\ShootingSam\ShootingSam.Build.cs"/>
     <ClCompile Include="..\..\Source\ShootingSam\ShootingSam.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

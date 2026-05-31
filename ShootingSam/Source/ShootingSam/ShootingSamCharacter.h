@@ -76,8 +76,7 @@ protected:
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
 
-	/** Called for shooting input */
-	void Shoot();
+
 
 public:
 
@@ -97,13 +96,14 @@ public:
 	UFUNCTION(BlueprintCallable, Category="Input")
 	virtual void DoJumpEnd();
 
-public:
-
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+	/** Called for shooting input */
+	void Shoot();
 
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<AGun> GunClass;

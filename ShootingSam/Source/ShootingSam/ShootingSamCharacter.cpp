@@ -172,6 +172,8 @@ void AShootingSamCharacter::OnDamageTaken(AActor* DamagedActor, float Damage, co
 		{
 			IsAlive = false;
 			GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+			DetachFromControllerPendingDestroy();
+
 			UE_LOG(LogTemp, Display, TEXT("Character Died: %s"), *GetActorNameOrLabel());
 		}
 	}
