@@ -52,8 +52,6 @@ void AShooterAI::StartBehaviorTree(AShootingSamCharacter* Player)
 		if (MyBlackboard && PlayerCharacter)
 		{
 			MyBlackboard->SetValueAsVector("StartLocation", MyCharacter->GetActorLocation());
-
-			MyBlackboard->SetValueAsVector("PlayerLocation", PlayerCharacter->GetActorLocation());
 		}
 	}
 }
