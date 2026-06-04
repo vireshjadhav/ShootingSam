@@ -32,10 +32,14 @@ void AShootingSamPlayerController::BeginPlay()
 
 	}
 
-	HUDWidget = CreateWidget<UHUDWidget>(this, HUDWidgetClass);
-	if (HUDWidget)
+	FString LevelName = GetWorld()->GetMapName();
+	if (!LevelName.Contains(TEXT("LV_MainMenu")))
 	{
-		HUDWidget->AddToViewport();
+		HUDWidget = CreateWidget<UHUDWidget>(this, HUDWidgetClass);
+		if (HUDWidget)
+		{
+			HUDWidget->AddToViewport();
+		}
 	}
 }
 

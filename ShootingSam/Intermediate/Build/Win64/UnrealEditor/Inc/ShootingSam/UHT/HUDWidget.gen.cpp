@@ -14,6 +14,8 @@ void EmptyLinkFunctionForGeneratedCodeHUDWidget() {}
 // ********** Begin Cross Module References ********************************************************
 SHOOTINGSAM_API UClass* Z_Construct_UClass_UHUDWidget();
 SHOOTINGSAM_API UClass* Z_Construct_UClass_UHUDWidget_NoRegister();
+UMG_API UClass* Z_Construct_UClass_UProgressBar_NoRegister();
+UMG_API UClass* Z_Construct_UClass_UTextBlock_NoRegister();
 UMG_API UClass* Z_Construct_UClass_UUserWidget();
 UPackage* Z_Construct_UPackage__Script_ShootingSam();
 // ********** End Cross Module References **********************************************************
@@ -61,13 +63,44 @@ struct Z_Construct_UClass_UHUDWidget_Statics
 		{ "IncludePath", "HUDWidget.h" },
 		{ "ModuleRelativePath", "HUDWidget.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HealthBar_MetaData[] = {
+		{ "BindWidgetOptional", "" },
+		{ "Category", "HUDWidget" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "HUDWidget.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TX_BulletCount_MetaData[] = {
+		{ "BindWidgetOptional", "" },
+		{ "Category", "HUDWidget" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "HUDWidget.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TX_ScoreValue_MetaData[] = {
+		{ "BindWidgetOptional", "" },
+		{ "Category", "HUDWidget" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "HUDWidget.h" },
+	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_HealthBar;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_TX_BulletCount;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_TX_ScoreValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UHUDWidget>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UHUDWidget_Statics::NewProp_HealthBar = { "HealthBar", nullptr, (EPropertyFlags)0x0010000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UHUDWidget, HealthBar), Z_Construct_UClass_UProgressBar_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HealthBar_MetaData), NewProp_HealthBar_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UHUDWidget_Statics::NewProp_TX_BulletCount = { "TX_BulletCount", nullptr, (EPropertyFlags)0x0010000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UHUDWidget, TX_BulletCount), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TX_BulletCount_MetaData), NewProp_TX_BulletCount_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UHUDWidget_Statics::NewProp_TX_ScoreValue = { "TX_ScoreValue", nullptr, (EPropertyFlags)0x0010000000080009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UHUDWidget, TX_ScoreValue), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TX_ScoreValue_MetaData), NewProp_TX_ScoreValue_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UHUDWidget_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UHUDWidget_Statics::NewProp_HealthBar,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UHUDWidget_Statics::NewProp_TX_BulletCount,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UHUDWidget_Statics::NewProp_TX_ScoreValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UHUDWidget_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UHUDWidget_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UUserWidget,
 	(UObject* (*)())Z_Construct_UPackage__Script_ShootingSam,
@@ -79,11 +112,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UHUDWidget_Statics::Cla
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
 	nullptr,
-	nullptr,
+	Z_Construct_UClass_UHUDWidget_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
 	0,
-	0,
+	UE_ARRAY_COUNT(Z_Construct_UClass_UHUDWidget_Statics::PropPointers),
 	0,
 	0x00B010A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UHUDWidget_Statics::Class_MetaDataParams), Z_Construct_UClass_UHUDWidget_Statics::Class_MetaDataParams)
@@ -105,10 +138,10 @@ UHUDWidget::~UHUDWidget() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_HUDWidget_h__Script_ShootingSam_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UHUDWidget, UHUDWidget::StaticClass, TEXT("UHUDWidget"), &Z_Registration_Info_UClass_UHUDWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UHUDWidget), 2787488662U) },
+		{ Z_Construct_UClass_UHUDWidget, UHUDWidget::StaticClass, TEXT("UHUDWidget"), &Z_Registration_Info_UClass_UHUDWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UHUDWidget), 537898753U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_HUDWidget_h__Script_ShootingSam_3711421149(TEXT("/Script/ShootingSam"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_HUDWidget_h__Script_ShootingSam_2056153181(TEXT("/Script/ShootingSam"),
 	Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_HUDWidget_h__Script_ShootingSam_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_HUDWidget_h__Script_ShootingSam_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

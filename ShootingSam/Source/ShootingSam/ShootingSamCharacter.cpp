@@ -11,6 +11,8 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
 #include "ShootingSam.h"
+#include "ShootingSamPlayerController.h"
+#include "Kismet/GameplayStatics.h"
 
 AShootingSamCharacter::AShootingSamCharacter()
 {
@@ -54,8 +56,17 @@ void AShootingSamCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
+	FString CurrentLevel = UGameplayStatics::GetCurrentLevelName(this); 
+
+	if (CurrentLevel == "LV_MainMenu")
+	{
+		SetActorHiddenInGame(true);
+	}
+
 	OnTakeAnyDamage.AddDynamic(this, &AShootingSamCharacter::OnDamageTaken);
 	Health = MaxHealth;
+	BulletCounts = MaxBullets;
+	UpdateHUD();
 
 	GetMesh()->HideBoneByName("weapon_r", EPhysBodyOp::PBO_None);
 
@@ -66,6 +77,24 @@ void AShootingSamCharacter::BeginPlay()
 		Gun->SetOwner(this);
 		Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("WeaponSocket"));
 		Gun->OwnerController = GetController();
+	}
+}
+
+void AShootingSamCharacter::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
+
+	if (BulletCounts == 0)
+	{
+		TimeElapsed += DeltaSeconds;
+		UE_LOG(LogTemp, Warning, TEXT("TimeElapsed: %f"), TimeElapsed);
+	}
+
+	if (TimeElapsed >= ReloadTime && BulletCounts == 0)
+	{
+		TimeElapsed = 0;
+		BulletCounts = MaxBullets;
+		UpdateHUD();
 	}
 }
 
@@ -114,7 +143,12 @@ void AShootingSamCharacter::Look(const FInputActionValue& Value)
 
 void AShootingSamCharacter::Shoot()
 {
-	if (Gun) Gun->PullTrigger();
+	if (Gun && BulletCounts > 0)
+	{
+		Gun->PullTrigger();
+		BulletCounts--;
+		UpdateHUD();
+	}
 }
 
 void AShootingSamCharacter::DoMove(float Right, float Forward)
@@ -159,22 +193,52 @@ void AShootingSamCharacter::DoJumpEnd()
 	StopJumping();
 }
 
+void AShootingSamCharacter::UpdateScore()
+{
+	if (IsAlive)
+	{
+		Score += HitPoints;
+	}
+	/*
+	AShootingSamPlayerController* PlayerController = Cast<AShootingSamPlayerController>(GetController());
+	if (PlayerController && PlayerController->HUDWidget)
+	{
+		PlayerController->HUDWidget->SetScoreText(Score);
+	}
+	*/
+
+	UpdateHUD();
+}
+
+void AShootingSamCharacter::UpdateHUD()
+{
+	AShootingSamPlayerController* PlayerController = Cast<AShootingSamPlayerController>(GetController());
+	if (PlayerController && PlayerController->HUDWidget)
+	{
+		float NewPercent = Health / MaxHealth;
+		PlayerController->HUDWidget->SetHealthBarPercent(NewPercent);
+		PlayerController->HUDWidget->SetScoreText(Score);
+		PlayerController->HUDWidget->SetBulletCount(BulletCounts);
+	}
+}
+
 void AShootingSamCharacter::OnDamageTaken(AActor* DamagedActor, float Damage, const UDamageType* DamageType, AController* InstigatedBy, AActor* DamageCauser)
 {
 	if (IsAlive)
 	{
-		UE_LOG(LogTemp, Display, TEXT("Health Before Damage: %f"), Health);
 		Health -= Damage;
 		Health = FMath::Max(Health, 0);
-		UE_LOG(LogTemp, Display, TEXT("Health After Damage: %f"), Health);
+		UpdateHUD();
+
+		AGun* PlayerGun = Cast<AGun>(DamageCauser);
+		AShootingSamCharacter* Player = Cast<AShootingSamCharacter>(PlayerGun->GetOwner());
 
 		if (Health <= 0)
 		{
+			Player->UpdateScore();
 			IsAlive = false;
 			GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 			DetachFromControllerPendingDestroy();
-
-			UE_LOG(LogTemp, Display, TEXT("Character Died: %s"), *GetActorNameOrLabel());
 		}
 	}
 }

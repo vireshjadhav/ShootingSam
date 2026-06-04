@@ -5,6 +5,8 @@
 #include "F:/Unreal Projects/ShootingSam/ShootingSam/Intermediate/Build/Win64/UnrealEditor/Inc/ShootingSam/UHT/AnimNotify_EndDash.gen.cpp"
 #include "F:/Unreal Projects/ShootingSam/ShootingSam/Intermediate/Build/Win64/UnrealEditor/Inc/ShootingSam/UHT/BTService_PlayerLocation.gen.cpp"
 #include "F:/Unreal Projects/ShootingSam/ShootingSam/Intermediate/Build/Win64/UnrealEditor/Inc/ShootingSam/UHT/BTService_PlayerLocationIfSeen.gen.cpp"
+#include "F:/Unreal Projects/ShootingSam/ShootingSam/Intermediate/Build/Win64/UnrealEditor/Inc/ShootingSam/UHT/BTTaskNode_ShootAtPlayer.gen.cpp"
+#include "F:/Unreal Projects/ShootingSam/ShootingSam/Intermediate/Build/Win64/UnrealEditor/Inc/ShootingSam/UHT/BTTask_ClearBlackboardKey.gen.cpp"
 #include "F:/Unreal Projects/ShootingSam/ShootingSam/Intermediate/Build/Win64/UnrealEditor/Inc/ShootingSam/UHT/CombatActivatable.gen.cpp"
 #include "F:/Unreal Projects/ShootingSam/ShootingSam/Intermediate/Build/Win64/UnrealEditor/Inc/ShootingSam/UHT/CombatActivationVolume.gen.cpp"
 #include "F:/Unreal Projects/ShootingSam/ShootingSam/Intermediate/Build/Win64/UnrealEditor/Inc/ShootingSam/UHT/CombatAIController.gen.cpp"
