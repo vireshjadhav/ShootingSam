@@ -56,19 +56,13 @@ protected:
 	UPROPERTY(EditAnywhere, Category ="Input")
 	UInputAction* ShootAction;
 
-public:
-
-	/** Constructor */
-	AShootingSamCharacter();	
-
-protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	virtual void Tick(float DeltaSeconds) override;
+
 	/** Initialize input action bindings */
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-protected:
 
 	/** Called for movement input */
 	void Move(const FInputActionValue& Value);
@@ -79,6 +73,8 @@ protected:
 
 
 public:
+	/** Constructor */
+	AShootingSamCharacter();
 
 	/** Handles move inputs from either controls or UI interfaces */
 	UFUNCTION(BlueprintCallable, Category="Input")
@@ -115,8 +111,25 @@ public:
 
 	float Health;
 
+	int32 MaxBullets = 30;
+	int32 BulletCounts = 0;
+
+	int32 Score = 0;
+
+	UPROPERTY(EditAnywhere)
+	float ReloadTime = 2.0f;
+
+	float TimeElapsed = 0;
+
+	UPROPERTY(EditAnywhere)
+	int32 HitPoints = 10;
+
 	UPROPERTY(BlueprintReadOnly)
 	bool IsAlive = true;
+
+	void UpdateScore();
+
+	void UpdateHUD();
 
 	UFUNCTION()
 	void OnDamageTaken(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
