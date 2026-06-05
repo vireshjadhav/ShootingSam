@@ -7,7 +7,6 @@
 
 #include "HUDWidget.h"
 
-
 #include "ShootingSamPlayerController.generated.h"
 
 class UInputMappingContext;
@@ -52,4 +51,16 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 	UHUDWidget* HUDWidget;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Audio")
+	TObjectPtr<USoundMix> MasterSoundMix;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Audio")
+	TObjectPtr<USoundClass> MasterSoundClass;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Audio")
+	float SavedVolumePercentage = 1.0f;
+
+	UFUNCTION(BlueprintCallable)
+	void SetMasterVolume(float Volume);
 };
