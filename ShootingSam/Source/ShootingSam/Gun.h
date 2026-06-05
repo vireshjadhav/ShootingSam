@@ -45,6 +45,12 @@ public:
 	float BulletDamage = 10.0f;
 
 	UPROPERTY(EditAnywhere)
+	USoundBase* ShootSound;
+
+	UPROPERTY(EditAnywhere)
+	USoundBase* ImpactSound;
+
+	UPROPERTY(EditAnywhere)
 	float MaxRange = 10000.0f;
 
 	void PullTrigger();

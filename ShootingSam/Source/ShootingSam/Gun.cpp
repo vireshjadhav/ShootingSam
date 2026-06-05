@@ -39,6 +39,9 @@ void AGun::Tick(float DeltaTime)
 void AGun::PullTrigger()
 {
 	MuzzleFlashParticleSystem->Activate(true);
+	
+	UE_LOG(LogTemp, Warning, TEXT("Trying to play gun shot sound"));
+	UGameplayStatics::PlaySoundAtLocation(GetWorld(), ShootSound, GetActorLocation());
 
 	if (OwnerController)
 	{
@@ -58,6 +61,8 @@ void AGun::PullTrigger()
 			UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), ImpactParticleSystem, HitResult.ImpactPoint, HitResult.ImpactPoint.Rotation());
 			AActor* HitActor = HitResult.GetActor();
 
+			UE_LOG(LogTemp, Warning, TEXT("Trying to play gun impact sound"));
+			UGameplayStatics::PlaySoundAtLocation(GetWorld(), ImpactSound, HitActor->GetActorLocation());
 
 			if (HitActor)
 			{

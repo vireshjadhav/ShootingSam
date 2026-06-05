@@ -8,6 +8,7 @@
 #include "Blueprint/UserWidget.h"
 #include "ShootingSam.h"
 #include "Widgets/Input/SVirtualJoystick.h"
+#include "Kismet/GameplayStatics.h"
 
 void AShootingSamPlayerController::BeginPlay()
 {
@@ -67,5 +68,15 @@ void AShootingSamPlayerController::SetupInputComponent()
 				}
 			}
 		}
+	}
+}
+
+void AShootingSamPlayerController::SetMasterVolume(float Volume)
+{
+	if (MasterSoundMix && MasterSoundClass)
+	{
+		UGameplayStatics::SetSoundMixClassOverride(this, MasterSoundMix, MasterSoundClass, Volume, 1.0f, 0.0f, true);
+
+		UGameplayStatics::PushSoundMixModifier(this, MasterSoundMix);
 	}
 }

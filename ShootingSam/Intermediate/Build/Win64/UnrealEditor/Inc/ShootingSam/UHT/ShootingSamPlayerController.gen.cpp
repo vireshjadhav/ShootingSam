@@ -14,6 +14,8 @@ void EmptyLinkFunctionForGeneratedCodeShootingSamPlayerController() {}
 // ********** Begin Cross Module References ********************************************************
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 ENGINE_API UClass* Z_Construct_UClass_APlayerController();
+ENGINE_API UClass* Z_Construct_UClass_USoundClass_NoRegister();
+ENGINE_API UClass* Z_Construct_UClass_USoundMix_NoRegister();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 SHOOTINGSAM_API UClass* Z_Construct_UClass_AShootingSamPlayerController();
 SHOOTINGSAM_API UClass* Z_Construct_UClass_AShootingSamPlayerController_NoRegister();
@@ -22,9 +24,56 @@ UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 UPackage* Z_Construct_UPackage__Script_ShootingSam();
 // ********** End Cross Module References **********************************************************
 
+// ********** Begin Class AShootingSamPlayerController Function SetMasterVolume ********************
+struct Z_Construct_UFunction_AShootingSamPlayerController_SetMasterVolume_Statics
+{
+	struct ShootingSamPlayerController_eventSetMasterVolume_Parms
+	{
+		float Volume;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "ShootingSamPlayerController.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_Volume;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AShootingSamPlayerController_SetMasterVolume_Statics::NewProp_Volume = { "Volume", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ShootingSamPlayerController_eventSetMasterVolume_Parms, Volume), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AShootingSamPlayerController_SetMasterVolume_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AShootingSamPlayerController_SetMasterVolume_Statics::NewProp_Volume,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AShootingSamPlayerController_SetMasterVolume_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AShootingSamPlayerController_SetMasterVolume_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AShootingSamPlayerController, nullptr, "SetMasterVolume", Z_Construct_UFunction_AShootingSamPlayerController_SetMasterVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AShootingSamPlayerController_SetMasterVolume_Statics::PropPointers), sizeof(Z_Construct_UFunction_AShootingSamPlayerController_SetMasterVolume_Statics::ShootingSamPlayerController_eventSetMasterVolume_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AShootingSamPlayerController_SetMasterVolume_Statics::Function_MetaDataParams), Z_Construct_UFunction_AShootingSamPlayerController_SetMasterVolume_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_AShootingSamPlayerController_SetMasterVolume_Statics::ShootingSamPlayerController_eventSetMasterVolume_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_AShootingSamPlayerController_SetMasterVolume()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AShootingSamPlayerController_SetMasterVolume_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AShootingSamPlayerController::execSetMasterVolume)
+{
+	P_GET_PROPERTY(FFloatProperty,Z_Param_Volume);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->SetMasterVolume(Z_Param_Volume);
+	P_NATIVE_END;
+}
+// ********** End Class AShootingSamPlayerController Function SetMasterVolume **********************
+
 // ********** Begin Class AShootingSamPlayerController *********************************************
 void AShootingSamPlayerController::StaticRegisterNativesAShootingSamPlayerController()
 {
+	UClass* Class = AShootingSamPlayerController::StaticClass();
+	static const FNameNativePtrPair Funcs[] = {
+		{ "SetMasterVolume", &AShootingSamPlayerController::execSetMasterVolume },
+	};
+	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
 FClassRegistrationInfo Z_Registration_Info_UClass_AShootingSamPlayerController;
 UClass* AShootingSamPlayerController::GetPrivateStaticClass()
@@ -108,6 +157,18 @@ struct Z_Construct_UClass_AShootingSamPlayerController_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "ShootingSamPlayerController.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MasterSoundMix_MetaData[] = {
+		{ "Category", "Audio" },
+		{ "ModuleRelativePath", "ShootingSamPlayerController.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MasterSoundClass_MetaData[] = {
+		{ "Category", "Audio" },
+		{ "ModuleRelativePath", "ShootingSamPlayerController.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SavedVolumePercentage_MetaData[] = {
+		{ "Category", "Audio" },
+		{ "ModuleRelativePath", "ShootingSamPlayerController.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DefaultMappingContexts_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_DefaultMappingContexts;
@@ -116,8 +177,15 @@ struct Z_Construct_UClass_AShootingSamPlayerController_Statics
 	static const UECodeGen_Private::FClassPropertyParams NewProp_MobileControlsWidgetClass;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_HUDWidgetClass;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_HUDWidget;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_MasterSoundMix;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_MasterSoundClass;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_SavedVolumePercentage;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
+	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_AShootingSamPlayerController_SetMasterVolume, "SetMasterVolume" }, // 2185399126
+	};
+	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AShootingSamPlayerController>::IsAbstract,
 	};
@@ -130,6 +198,9 @@ const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AShootingSamPla
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AShootingSamPlayerController_Statics::NewProp_MobileControlsWidgetClass = { "MobileControlsWidgetClass", nullptr, (EPropertyFlags)0x0024080000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShootingSamPlayerController, MobileControlsWidgetClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MobileControlsWidgetClass_MetaData), NewProp_MobileControlsWidgetClass_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AShootingSamPlayerController_Statics::NewProp_HUDWidgetClass = { "HUDWidgetClass", nullptr, (EPropertyFlags)0x0014000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShootingSamPlayerController, HUDWidgetClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UHUDWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HUDWidgetClass_MetaData), NewProp_HUDWidgetClass_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShootingSamPlayerController_Statics::NewProp_HUDWidget = { "HUDWidget", nullptr, (EPropertyFlags)0x00100000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShootingSamPlayerController, HUDWidget), Z_Construct_UClass_UHUDWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HUDWidget_MetaData), NewProp_HUDWidget_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShootingSamPlayerController_Statics::NewProp_MasterSoundMix = { "MasterSoundMix", nullptr, (EPropertyFlags)0x0114000000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShootingSamPlayerController, MasterSoundMix), Z_Construct_UClass_USoundMix_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MasterSoundMix_MetaData), NewProp_MasterSoundMix_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShootingSamPlayerController_Statics::NewProp_MasterSoundClass = { "MasterSoundClass", nullptr, (EPropertyFlags)0x0114000000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShootingSamPlayerController, MasterSoundClass), Z_Construct_UClass_USoundClass_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MasterSoundClass_MetaData), NewProp_MasterSoundClass_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AShootingSamPlayerController_Statics::NewProp_SavedVolumePercentage = { "SavedVolumePercentage", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShootingSamPlayerController, SavedVolumePercentage), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SavedVolumePercentage_MetaData), NewProp_SavedVolumePercentage_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AShootingSamPlayerController_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamPlayerController_Statics::NewProp_DefaultMappingContexts_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamPlayerController_Statics::NewProp_DefaultMappingContexts,
@@ -138,6 +209,9 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AShooting
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamPlayerController_Statics::NewProp_MobileControlsWidgetClass,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamPlayerController_Statics::NewProp_HUDWidgetClass,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamPlayerController_Statics::NewProp_HUDWidget,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamPlayerController_Statics::NewProp_MasterSoundMix,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamPlayerController_Statics::NewProp_MasterSoundClass,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShootingSamPlayerController_Statics::NewProp_SavedVolumePercentage,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AShootingSamPlayerController_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AShootingSamPlayerController_Statics::DependentSingletons[])() = {
@@ -150,11 +224,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AShootingSamPlayerContr
 	"Game",
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
-	nullptr,
+	FuncInfo,
 	Z_Construct_UClass_AShootingSamPlayerController_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
-	0,
+	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_AShootingSamPlayerController_Statics::PropPointers),
 	0,
 	0x008003A5u,
@@ -177,10 +251,10 @@ AShootingSamPlayerController::~AShootingSamPlayerController() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamPlayerController_h__Script_ShootingSam_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AShootingSamPlayerController, AShootingSamPlayerController::StaticClass, TEXT("AShootingSamPlayerController"), &Z_Registration_Info_UClass_AShootingSamPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShootingSamPlayerController), 28444526U) },
+		{ Z_Construct_UClass_AShootingSamPlayerController, AShootingSamPlayerController::StaticClass, TEXT("AShootingSamPlayerController"), &Z_Registration_Info_UClass_AShootingSamPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShootingSamPlayerController), 763943716U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamPlayerController_h__Script_ShootingSam_2397938537(TEXT("/Script/ShootingSam"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamPlayerController_h__Script_ShootingSam_2916989282(TEXT("/Script/ShootingSam"),
 	Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamPlayerController_h__Script_ShootingSam_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Projects_ShootingSam_ShootingSam_Source_ShootingSam_ShootingSamPlayerController_h__Script_ShootingSam_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
